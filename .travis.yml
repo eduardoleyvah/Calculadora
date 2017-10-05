@@ -11,4 +11,6 @@ before script:
 
 script:
   - python TestCalculadora.py
-  
+  - coverage run --branch TestCalculadora.py
+  - cd tests
+  - lettuce
